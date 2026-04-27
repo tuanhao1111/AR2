@@ -2,15 +2,18 @@
 
 <style>
   model-viewer { 
-    width: 100%; 
-    height: 500px; 
-    background-color: #eee; 
+    width: 1928px; 
+    height: 1080px; 
+    /* background-color: #eee;  <-- Có thể bỏ dòng này vì ta dùng skybox */
   }
 </style>
 
 <model-viewer 
-  /* Link đã được chuyển sang dạng Raw */
   src="https://raw.githubusercontent.com/tuanhao1111/AR2/main/test2.glb"
+  /* THÊM 2 DÒNG NÀY */
+  poster="[ĐƯỜNG_DẪN_ĐẾN_FILE_HÌNH_ẢNH_NÀY_CỦA_BẠN]"
+  skybox-image="https://raw.githubusercontent.com/tuanhao1111/AR2/main/beautiful-landscape-view-ocean.jpg"
+  
   ar 
   ar-modes="webxr scene-viewer quick-look" 
   camera-controls 
